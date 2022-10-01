@@ -52,3 +52,10 @@ where `scp` means secure copy, what follows is the file you want to copy and the
 
 To verify that, try `ls` command. Then you'll see the file is successfully copied! 
 ![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/ls.png)
+
+## Setting an SSH Key
+
+So far, we’ve seen how to log in, run commands, and copy files to a remote server with `ssh` and `scp`. Every time we log in or run scp, we have to type (or copy-paste) our password. This is frustrating, time consuming, and interrupts whatever task we were trying to do. Naturally, we should look into if there are ways to avoid this repetitive, frustrating task with a configuration or program.
+
+In this case, there is a great solution – `ssh` keys. Here’s what you should run to set this up:
+`ssh-keygen`
