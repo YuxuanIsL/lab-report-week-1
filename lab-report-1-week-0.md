@@ -34,3 +34,21 @@ You will see something like this: ![image](https://github.com/YuxuanIsL/lab-repo
 Now you have been in the remote computer and can now try some useful commands here. Try running the commands `cd`, `ls`, `pwd`, `mkdir`, and `cp` a few times in different ways, both on your computer, and on the remote computer after ssh-ing. 
 
 Here is a short demo for using command: ![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/Try%20running%20some%20cmd%20.png)
+
+## Moving Files with `scp`
+
+So far we’ve seen how we can do some work on local and remote computers. One key step in working remotely is being able to copy files back and forth between the computers. We’ll see now another way to copy a file (or many files!) from your computer to a remote computer. The command is called `scp`, and we will always run it from the client (that means from your computer, not logged into `ieng6`). 
+
+To demonstrating this, we will create a new jave file in VSCode called `WhereAmI.java`
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/where%20am%20i.png)
+
+Then compile and run the java file using
+`javac WhereAmI.java`
+`java WhereAmI`
+
+Then, in the terminal from the directory where you made this file, run this command 
+`scp WhereAmI.java cs15lfa22lr@ieng6.ucsd.edu:~/`
+where `scp` means secure copy, what follows is the file you want to copy and the server account. Enter the password. You are now having `WhereAmI.java` in the remote computer. 
+
+To verify that, try `ls` command. Then you'll see the file is successfully copied! 
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/ls.png)
