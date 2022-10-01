@@ -5,4 +5,3 @@ VSCode is a powerful tool for you to learn coding. If you don't have it installe
 [Link](https://code.visualstudio.com/)
 
 When it is installed, you should be able to open a window that looks like this (it might have different colors, or a different menu bar, depending on your system and settings):
-![Image]()
