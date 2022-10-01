@@ -59,3 +59,21 @@ So far, we’ve seen how to log in, run commands, and copy files to a remote ser
 
 In this case, there is a great solution – `ssh` keys. Here’s what you should run to set this up:
 `ssh-keygen`
+
+You will see this:
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/ssh.png)
+This created two new files on your system; the private key (in a file `id_rsa`) and the public key (in a file `id_rsa.pub`), stored in the `.ssh` directory on your computer.
+
+Now we need to copy the **public** (not the private) key to the `.ssh` directory of your user account on the server.
+
+**On client:**
+`$ ssh cs15lfa22zz@ieng6.ucsd.edu
+<Enter Password>`
+
+**On server:**
+`$ mkdir .ssh
+$ <logout>`
+
+**On client:**
+`$ scp /Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys`
+(Make sure to use your own username)
