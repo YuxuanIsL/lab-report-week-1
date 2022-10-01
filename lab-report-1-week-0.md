@@ -48,7 +48,7 @@ Then compile and run the java file using
 
 Then, in the terminal from the directory where you made this file, run this command 
 `scp WhereAmI.java cs15lfa22lr@ieng6.ucsd.edu:~/`
-where `scp` means secure copy, what follows is the file you want to copy and the server account. Enter the password. You are now having `WhereAmI.java` in the remote computer. 
+where `scp` means secure copy, what follows is the file you want to copy and the server account. **Enter the password**. You are now having `WhereAmI.java` in the remote computer. 
 
 To verify that, try `ls` command. Then you'll see the file is successfully copied! 
 ![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/ls.png)
@@ -77,3 +77,16 @@ $ <logout>`
 **On client:**
 `$ scp /Users/joe/.ssh/id_rsa.pub cs15lfa22@ieng6.ucsd.edu:~/.ssh/authorized_keys`
 (Make sure to use your own username)
+
+Once those are done, you are free of entering password when using `ssh` and `scp`.
+
+## Optimizing Remote Running
+
+This section will display what part becomes easier after setting up this key.
+
+We will be using `WhereAmI.java`
+
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/demo.png)
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/demo%5C.png)
+
+By implementing the key, we will skip over the step that asks entering password.
