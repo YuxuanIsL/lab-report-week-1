@@ -80,6 +80,8 @@ $ <logout>`
 
 Once those are done, you are free of entering password when using `ssh` and `scp`.
 
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/ssh%20showup.png)
+
 ## Optimizing Remote Running
 
 This section will display what part becomes easier after setting up this key.
@@ -90,3 +92,8 @@ We will be using `WhereAmI.java`
 ![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/demo%5C.png)
 
 By implementing the key, we will skip over the step that asks entering password.
+
+We could input command at the end of `ssh`command.
+
+![image](https://github.com/YuxuanIsL/lab-report-week-1/blob/main/optimiing.png)
+
